@@ -10,7 +10,7 @@ export const DarkModeContextProvider = ({ children }) => {
 
   // not active
   const toggle = () => {
-    <ErrorBoundary>setDarkMode(!darkMode);</ErrorBoundary>;
+    setDarkMode(!darkMode);
   };
 
   useEffect(() => {
@@ -18,10 +18,8 @@ export const DarkModeContextProvider = ({ children }) => {
   }, [darkMode]);
 
   return (
-    <ErrorBoundary>
-      <DarkModeContext.Provider value={{ darkMode, toggle }}>
-        {children}
-      </DarkModeContext.Provider>
-    </ErrorBoundary>
+    <DarkModeContext.Provider value={{ darkMode, toggle }}>
+      {children}
+    </DarkModeContext.Provider>
   );
 };
