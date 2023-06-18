@@ -5,7 +5,8 @@
   gap: 10px;
   // position: absolute;
   height: 250px;
-  margin-bottom: 30px;
+
+  margin-bottom: 10px;
 
   @include mobile {
     height: 50px;
@@ -13,7 +14,7 @@
     justify-content: space-between;
   }
 
-  @include tablet{
+  @include tablet {
     height: 150px;
     gap: 20px;
     // top: 50px;
@@ -70,11 +71,11 @@
       border-radius: 50%;
 
       @include mobile {
-       left: 0;
-       right: 0;
-       top: 0;
-       bottom: 0;
-       margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
       }
     }
   }

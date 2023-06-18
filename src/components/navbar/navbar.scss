@@ -9,13 +9,17 @@
     // align-self: flex-start;
     top: 0;
     background-color: themed("bg");
-    color:themed("textColor");
+    color: themed("textColor");
     z-index: 999;
+    width: 100%;
+    padding: 0 30px;
+    // width: 100vw;
+
+    overflow-x: hidden;
     align-items: center;
-    // margin: auto;
     justify-content: space-between;
-    padding: 10px 20px;
-   
+    padding: 10px 0;
+
     .left {
       display: flex;
       align-items: center;
@@ -39,15 +43,15 @@
 
         input {
           border: none;
-          width: 500px;
+          width: 400px;
           background-color: transparent;
           color: themed("textColor");
 
-          @include mobile{
+          @include mobile {
             display: none;
           }
 
-          @include tablet{
+          @include tablet {
             width: 200px;
           }
         }
@@ -58,9 +62,11 @@
       display: flex;
       align-items: center;
       gap: 20px;
+      // right: -20px;
 
-      @include mobile{
+      @include mobile {
         display: none;
+        // width: 100%;
       }
 
       .user {
@@ -68,8 +74,9 @@
         align-items: center;
         gap: 10px;
         font-weight: 500;
+        right: -30px;
 
-        @include tablet{
+        @include tablet {
           display: none;
         }
 

@@ -4,14 +4,6 @@ import "./posts.scss";
 
 const Posts = () => {
   const posts = [
-    {
-      id: 1,
-      name: "Jon Connors",
-      userId: 1,
-      profilePic: "/front4.jpg",
-      img: "./ai.jpg",
-    },
-
     // 2nd post
     {
       id: 2,
@@ -22,16 +14,34 @@ const Posts = () => {
 
       img: "./vr.jpg",
     },
+    // 3rd post
+    {
+      id: 3,
+      name: "Travis scout",
+      userId: 3,
+      profilePic: "/front6.jpg",
+      desc: "",
+      img: "./ai.jpg",
+    },
+    {
+      id: 4,
+      name: "Alex C",
+      userId: 4,
+      profilePic: "/Pic7.jpg",
+      desc: "",
+      img: "./Code.jpg",
+    },
   ];
 
   return (
-    <ErrorBoundary>
-      <div className="posts">
-        {posts.map((post) => (
-          <Post post={post} key={post.id} />
-        ))}
-      </div>
-    </ErrorBoundary>
+    // <ErrorBoundary>
+    <div className="posts">
+      {posts.map((post) => (
+        <Post post={post} key={post.id} />
+      ))}
+    </div>
+
+    // </ErrorBoundary>
   );
 };
 
