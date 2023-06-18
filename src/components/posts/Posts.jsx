@@ -21,7 +21,7 @@ const Posts = () => {
       userId: 3,
       profilePic: "/front6.jpg",
       desc: "",
-      img: "./ai.jpg",
+      img: "./Ai.jpg",
     },
     {
       id: 4,

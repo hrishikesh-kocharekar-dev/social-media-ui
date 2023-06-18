@@ -16,7 +16,7 @@ import ErrorBoundary from "../posts/ErrorBoundary";
 
 const Navbar = () => {
   const { toggle, darkMode } = useContext(DarkModeContext);
-  const { currentUser } = useContext(AuthContext);
+  useContext(AuthContext);
 
   return (
     <ErrorBoundary>
