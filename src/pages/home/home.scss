@@ -1,18 +1,21 @@
 @import "../../style.scss";
 
-.home{
+.home {
   @include themify($themes) {
-    padding: 20px 70px;
+    padding: 50px 70px;
     background-color: themed("bgSoft");
     // color:aliceblue;
 
     @include mobile {
-      padding: 10px;
+      padding: 10px 25px;
       // margin: auto;
     }
 
-    @include tablet{
-      padding: 20px;
+    @include tablet {
+      padding: 10px 25px;
+      // padding: 20px;
+      // padding: 40px;
+      // padding: 10px 20px;
     }
   }
- }
+}

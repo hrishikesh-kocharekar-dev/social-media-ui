@@ -38,9 +38,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="right">
-          <PersonOutlinedIcon />
-          <EmailOutlinedIcon />
-          <NotificationsOutlinedIcon />
+
           <div className="user">
             <img src="./Pic2.jpg" alt="" />
           </div>
